@@ -13,7 +13,7 @@ const ChatList = () => {
 
   return (
     <div className="chatList">
-      <div className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-700 scrollbar-track-slate-300 h-32 overflow-y-scroll">
+      <div className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-700 scrollbar-track-slate-300 h-auto overflow-y-scroll">
         <div className="grid grid-cols-1" >
           <span className="title">DASHBOARD</span>
           <Link to="/dashboard">Create a new Chat</Link>
