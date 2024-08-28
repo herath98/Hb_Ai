@@ -38,6 +38,11 @@ const imagekit = new ImageKit({
   privateKey: process.env.IMAGE_KIT_PRIVATE_KEY,
 });
 
+app.get("/api/test-auth", ClerkExpressRequireAuth(), (req, res) => {
+  res.send("Authenticated");
+});
+
+
 app.get("/api/upload", (req, res) => {
   const result = imagekit.getAuthenticationParameters();
   res.send(result);

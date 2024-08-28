@@ -19,7 +19,7 @@ const ChatList = () => {
       <Link to="/">Contact</Link>
       <hr />
       <span className="title">RECENT CHATS</span>
-      <div className="list">
+      <div className="grid grid-cols-1 overflow-scroll scroll-hidden">
         {isPending
           ? "Loading..."
           : error
