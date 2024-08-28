@@ -3,6 +3,7 @@ import "./rootLayout.css";
 import { ClerkProvider, SignedIn, UserButton } from "@clerk/clerk-react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+import logo from "../../assets/loai.png"
 
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
@@ -17,7 +18,7 @@ const RootLayout = () => {
         <div className="rootLayout">
           <header>
             <Link to="/" className="logo">
-              <img src="/logo.png" alt="" />
+              <img src={logo} alt="" />
               <span>Hb_Ai</span>
             </Link>
             <div className="user">

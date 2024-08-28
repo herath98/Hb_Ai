@@ -1,6 +1,7 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import "./dashboardPage.css";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/loai.png"
 
 const DashboardPage = () => {
   const queryClient = useQueryClient();
@@ -36,8 +37,8 @@ const DashboardPage = () => {
     <div className="dashboardPage">
       <div className="texts">
         <div className="logo">
-          <img src="/logo.png" alt="" />
-          <h1>HU AI</h1>
+          <img src={logo} alt="" />
+          <h1>Hb AI</h1>
         </div>
         <div className="options">
           <div className="option">
